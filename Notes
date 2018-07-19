@@ -1,0 +1,8 @@
+Controller - To handle Request mapping and responsible to send response
+Services - To handle Business Logics & transmit data between controller & DAO
+DAO - Data Access Object - Handles Database 
+Bean - Its a model(Data between layers) that helps to transfer data in various spring layers.
+       USed for Data encapsulation Concept  
+@Repository - Annotation that connects to the repository. In this project it connects to the database
+@AutoWired - Dependency Injection
+       
