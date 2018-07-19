@@ -10,3 +10,6 @@ public class Db2ServiceApplication {
 		SpringApplication.run(Db2ServiceApplication.class, args);
 	}
 }
+
+
+//Service 
