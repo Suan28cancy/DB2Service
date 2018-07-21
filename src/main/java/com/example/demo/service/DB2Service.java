@@ -19,7 +19,7 @@ public class DB2Service {
 
 	}
 
-	public DB2Bean getNAICSNameByID(int ID) {
+	public List<DB2Bean> getNAICSNameByID(int ID) {
 		return db2dao.getNAICSNameByID(ID);
 
 	}

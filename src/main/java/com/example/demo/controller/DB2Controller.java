@@ -27,8 +27,8 @@ public class DB2Controller {
 	}
 
 	@RequestMapping(value = "/getbyID/{ID}",method = RequestMethod.GET)
-	public ResponseEntity<DB2Bean> getNAICSNameByID(@PathVariable("ID") int ID)  {
-		return new ResponseEntity<DB2Bean>(db2Service.getNAICSNameByID(ID),HttpStatus.OK);
+	public ResponseEntity<List<DB2Bean>> getNAICSNameByID(@PathVariable("ID") int ID)  {
+		return new ResponseEntity<List<DB2Bean>>(db2Service.getNAICSNameByID(ID),HttpStatus.OK);
 
 	}
 

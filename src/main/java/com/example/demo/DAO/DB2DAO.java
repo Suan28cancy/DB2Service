@@ -23,10 +23,10 @@ public class DB2DAO {
 
 	}
 
-	public DB2Bean getNAICSNameByID(int ID) {
+	public List<DB2Bean> getNAICSNameByID(int ID) {
 		String sql = "SELECT NAICS_ID, NAICS_NM from SCOUT.NAICS Where NAICS_ID = ?";
 		RowMapper<DB2Bean> rowMapper = new BeanPropertyRowMapper<DB2Bean>(DB2Bean.class);
-		return jdbcTemplate.queryForObject(sql, rowMapper, new Integer(ID));
+		return jdbcTemplate.query(sql, rowMapper, new Integer(ID));
 
 	}
 }
