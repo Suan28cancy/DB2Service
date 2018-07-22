@@ -24,4 +24,8 @@ public class DB2Service {
 
 	}
 
+	public List<DB2Bean> getNAICSIDByName(String Name) {
+				return db2dao.getNAICSIDByName(Name);
+	}
+
 }

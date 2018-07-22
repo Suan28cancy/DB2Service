@@ -29,6 +29,12 @@ public class DB2DAO {
 		return jdbcTemplate.query(sql, rowMapper, new Integer(ID));
 
 	}
+	
+	public List<DB2Bean> getNAICSIDByName(String Name) {
+		String sql = "SELECT NAICS_NM, NAICS_ID from SCOUT.NAICS Where NAICS_NM = ?";
+		RowMapper<DB2Bean> rowMapper = new BeanPropertyRowMapper<DB2Bean>(DB2Bean.class);
+		return jdbcTemplate.query(sql, rowMapper, new String (Name));
+	}
 }
 
 /*

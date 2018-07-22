@@ -31,5 +31,11 @@ public class DB2Controller {
 		return new ResponseEntity<List<DB2Bean>>(db2Service.getNAICSNameByID(ID),HttpStatus.OK);
 
 	}
+	
+	@RequestMapping(value = "/getbyName/{Name}",method = RequestMethod.GET)
+	public ResponseEntity<List<DB2Bean>> getNAICSIDByName(@PathVariable("Name") String Name)  {
+		return new ResponseEntity<List<DB2Bean>>(db2Service.getNAICSIDByName(Name),HttpStatus.OK);
+
+	}
 
 }
