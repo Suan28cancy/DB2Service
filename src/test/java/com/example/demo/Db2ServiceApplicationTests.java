@@ -15,9 +15,4 @@ public class Db2ServiceApplicationTests {
 	public void contextLoads() {
 	}
 	
-	@Test
-	public void sampleTest() {
-		assertTrue(true);
-	}
-
 }

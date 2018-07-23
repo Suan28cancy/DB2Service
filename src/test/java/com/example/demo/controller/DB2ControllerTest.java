@@ -98,4 +98,9 @@ public class DB2ControllerTest {
 		JSONAssert.assertEquals(expected, result.getResponse().getContentAsString(), true);
 	}
 
+	@Test
+	public void sampleTest() {
+		assertTrue(true);
+	}
+
 }
