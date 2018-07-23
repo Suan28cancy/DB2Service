@@ -16,7 +16,7 @@ public class Db2ServiceApplicationTests {
 	}
 	
 	@Test
-	public void chumma() {
+	public void sampleTest() {
 		assertTrue(true);
 	}
 
