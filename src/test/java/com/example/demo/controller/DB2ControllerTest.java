@@ -100,7 +100,7 @@ public class DB2ControllerTest {
 
 	@Test
 	public void sampleTest() {
-		assertTrue(true);
+		assertTrue(false);
 	}
 
 }
